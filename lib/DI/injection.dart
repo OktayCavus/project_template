@@ -9,7 +9,6 @@ final getIt = GetIt.instance;
 
 @InjectableInit(asExtension: false)
 FutureOr<GetIt> configureDependencies() async {
-  // Registering Dio explicitly
   getIt.registerLazySingleton<Dio>(() => Dio());
 
   return init(getIt);
